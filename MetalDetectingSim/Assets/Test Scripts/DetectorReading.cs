@@ -22,8 +22,49 @@ public class DetectorReading : MonoBehaviour
         {
             if (other.gameObject.name.Contains("gold"))
             {
-                Debug.Log("70");
+                if (other.gameObject.name.Contains("disc"))
+                {
+                    Debug.Log("");
+                }
+                if (other.gameObject.name.Contains("random"))
+                {
+                    Debug.Log("");
+                }
             }
+            if (other.gameObject.name.Contains("silver"))
+            {
+                if (other.gameObject.name.Contains("disc"))
+                {
+                    Debug.Log("");
+                }
+                if (other.gameObject.name.Contains("random"))
+                {
+                    Debug.Log("");
+                }
+            }
+            if (other.gameObject.name.Contains("copper"))
+            {
+                if (other.gameObject.name.Contains("disc"))
+                {
+                    Debug.Log("");
+                }
+                if (other.gameObject.name.Contains("random"))
+                {
+                    Debug.Log("");
+                }
+            }
+            if (other.gameObject.name.Contains("iron"))
+            {
+                if (other.gameObject.name.Contains("disc"))
+                {
+                    Debug.Log("");
+                }
+                if (other.gameObject.name.Contains("random"))
+                {
+                    Debug.Log("");
+                }
+            }
+
         }
     }
 }
