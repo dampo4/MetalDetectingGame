@@ -20,7 +20,7 @@ public class SpawnArtefacts : MonoBehaviour
             float check = Random.Range(0f, 100f);
             if (check < chance)
             {
-                var newObject = (GameObject)Instantiate(cube, new Vector3(.5f+Mathf.Floor(i/width), 0, (.5f + i)-(Mathf.Floor(i/height)*height)), Quaternion.identity);
+                var newObject = (GameObject)Instantiate(cube, new Vector3(.5f+Mathf.Floor(i/width), -0.56f, (.5f + i)-(Mathf.Floor(i/height)*height)), Quaternion.identity);
                 newObject.name = metal[Random.Range(0, metal.Count)] + ' ' + shape[Random.Range(0, shape.Count)];
 
             }
