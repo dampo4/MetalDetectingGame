@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    void UpdateUI()
+    public void UpdateUI(Item item)
     {
-
+        Debug.Log("Updating UI"+ item.name);
     }
 }

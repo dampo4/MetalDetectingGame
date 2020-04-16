@@ -10,9 +10,10 @@ public class Digging : MonoBehaviour
     public GameObject silverMound;
     public GameObject goldMound;
     public GameObject copperMound;
+    public Canvas inventory;
     private Vector3 moundPos;
     public List<Item> items;
-    List<Item> possibleItems;
+    public List<Item> possibleItems;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,23 +54,24 @@ public class Digging : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     Debug.Log("Picked Up");
-                    Destroy(hit.transform.gameObject);
-                    Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                     foreach(Item item in items)
                     {
-                        if (item.name.Contains("Gold Coin") && hit.transform.name.Contains("gold"))
+                        if (item.name.Contains("Gold Coin") && hit.transform.name.Contains("Gold"))
                         {
                             possibleItems.Add(item);
                         }
-                        if (item.name.Contains("Silver Coin") && hit.transform.name.Contains("silver"))
+                        if (item.name.Contains("Silver Coin") && hit.transform.name.Contains("Silver"))
                         {
                             possibleItems.Add(item);
                         }
-                        if (item.name.Contains("Copper Coin") && hit.transform.name.Contains("copper"))
+                        if (item.name.Contains("Copper Coin") && hit.transform.name.Contains("Copper"))
                         {
                             possibleItems.Add(item);
                         }
                     }
+                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[0]);
+                    Destroy(hit.transform.gameObject);
+                    Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                 }
             }
             else if (hit.transform.tag == "Ground")
