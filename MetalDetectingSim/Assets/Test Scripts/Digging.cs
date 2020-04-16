@@ -11,6 +11,8 @@ public class Digging : MonoBehaviour
     public GameObject goldMound;
     public GameObject copperMound;
     private Vector3 moundPos;
+    public List<Item> items;
+    List<Item> possibleItems;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +55,21 @@ public class Digging : MonoBehaviour
                     Debug.Log("Picked Up");
                     Destroy(hit.transform.gameObject);
                     Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                    foreach(Item item in items)
+                    {
+                        if (item.name.Contains("Gold Coin") && hit.transform.name.Contains("gold"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Silver Coin") && hit.transform.name.Contains("silver"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Copper Coin") && hit.transform.name.Contains("copper"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                    }
                 }
             }
             else if (hit.transform.tag == "Ground")
