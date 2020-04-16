@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void UpdateUI()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
