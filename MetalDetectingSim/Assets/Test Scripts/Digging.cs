@@ -43,9 +43,19 @@ public class Digging : MonoBehaviour
                     {
                         Instantiate(copperMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                     }
+                    Destroy(hit.transform.gameObject);
                 }
             }
-            if (hit.transform.tag == "Ground")
+            if (hit.transform.tag == "Pickup")
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("Picked Up");
+                    Destroy(hit.transform.gameObject);
+                    Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+            }
+            else if (hit.transform.tag == "Ground")
             {
                 if (Input.GetMouseButtonDown(0))
                 {

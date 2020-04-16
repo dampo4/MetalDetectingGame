@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2425580202356515348}
   - component: {fileID: 6697524347266996258}
   - component: {fileID: 1139106707497739483}
+  - component: {fileID: -4059884708990173245}
   m_Layer: 0
-  m_Name: GoldMound 1
-  m_TagString: Untagged
+  m_Name: SilverMound
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-4059884708990173245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725509292971839495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013045035, y: 0.013045036, z: 0.007}
+  m_Center: {x: -0.0000052140094, y: -0.00002934784, z: 0.0005157376}
 --- !u!1001 &6406452238055931659
 PrefabInstance:
   m_ObjectHideFlags: 0
