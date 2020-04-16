@@ -70,6 +70,7 @@ public class Digging : MonoBehaviour
                         }
                     }
                     inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[0]);
+                    possibleItems.Clear();
                     Destroy(hit.transform.gameObject);
                     Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public Transform itemsParent;
-    InventorySlot[] slots
+    InventorySlot[] slots;
+    int count = 0;
 
     private void Start()
     {
@@ -14,6 +15,18 @@ public class PlayerInventory : MonoBehaviour
     public void UpdateUI(Item item)
     {
         Debug.Log("Updating UI"+ item.name);
-
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (i == count)
+            {
+                slots[i].AddItem(item);
+                
+            }
+            else if(i > count)
+            {
+                slots[i].RemoveItem();
+            }
+        }
+        count += 1;
     }
 }
