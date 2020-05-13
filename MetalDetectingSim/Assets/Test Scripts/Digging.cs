@@ -10,7 +10,10 @@ public class Digging : MonoBehaviour
     public GameObject silverMound;
     public GameObject goldMound;
     public GameObject copperMound;
+    public Canvas inventory;
     private Vector3 moundPos;
+    public List<Item> items;
+    public List<Item> possibleItems;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,9 +46,36 @@ public class Digging : MonoBehaviour
                     {
                         Instantiate(copperMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                     }
+                    Destroy(hit.transform.gameObject);
                 }
             }
-            if (hit.transform.tag == "Ground")
+            if (hit.transform.tag == "Pickup")
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("Picked Up");
+                    foreach(Item item in items)
+                    {
+                        if (item.name.Contains("Gold Coin") && hit.transform.name.Contains("Gold"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Silver Coin") && hit.transform.name.Contains("Silver"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Copper Coin") && hit.transform.name.Contains("Copper"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                    }
+                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[0]);
+                    possibleItems.Clear();
+                    Destroy(hit.transform.gameObject);
+                    Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+            }
+            else if (hit.transform.tag == "Ground")
             {
                 if (Input.GetMouseButtonDown(0))
                 {
