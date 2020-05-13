@@ -14,6 +14,7 @@ public class Controller : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
+        move.y -= 9.8f * Time.deltaTime;
         controller.Move(move * speed * Time.deltaTime);
     }
 }
