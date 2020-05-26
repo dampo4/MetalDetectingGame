@@ -9,8 +9,9 @@ public class ShowImage : MonoBehaviour
     public Image display;
     public GameObject player;
     public GameObject museum;
+    public GameObject forest;
     //private Vector3 museum = new Vector3(63.04f, 7.73f, 23.49f);
-    private Vector3 forest = new Vector3(206.1f, 6.659f, 151.4f);
+    //private Vector3 forest = new Vector3(206.1f, 6.659f, 151.4f);
     private CharacterController test;
     public void Display(int icon)
     {
@@ -39,7 +40,7 @@ public class ShowImage : MonoBehaviour
         }
         else if (destination == "Forest")
         {
-            player.transform.position = forest;
+            player.transform.position = forest.transform.position;
         }
         test.enabled = true;
     }
