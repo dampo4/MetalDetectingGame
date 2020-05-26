@@ -23,17 +23,120 @@ public class Digging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+
+        if (Input.GetMouseButtonDown(0))
         {
-            //Debug.Log(hit.transform.name);
-            //Debug.DrawRay(cam.transform.position, cam.transform.forward * range,Color.red);
-            if (hit.transform.tag == "Artefact")
+            Debug.Log("clicked");
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(cam.transform.position, cam.transform.forward, range);
+            RaycastHit artefact = new RaycastHit();
+            RaycastHit ground = new RaycastHit();
+            RaycastHit pickup = new RaycastHit();
+            for (int i = 0; i < hits.Length; i++)
+            {
+                if (hits[i].transform.gameObject.tag == "Artefact")
+                {
+                    artefact = hits[i];
+                }
+                if (hits[i].transform.gameObject.tag == "Ground")
+                {
+                    ground = hits[i];
+                }
+                if (hits[i].transform.gameObject.tag == "Pickup")
+                {
+                    pickup = hits[i];
+                }
+            }
+            if (artefact.collider != null && ground.collider != null)
+            {
+                moundPos = ground.point;
+                Debug.Log("digging");
+                if (artefact.transform.name.Contains("gold"))
+                {
+                    Debug.Log("gold");
+                    Instantiate(goldMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+                if (artefact.transform.name.Contains("silver"))
+                {
+                    Instantiate(silverMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+                if (artefact.transform.name.Contains("copper"))
+                {
+                    Instantiate(copperMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+                Destroy(artefact.transform.gameObject);
+            }
+            if (pickup.collider != null)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("Picked Up");
+                    foreach (Item item in items)
+                    {
+                        if (item.name.Contains("Gold Coin") && pickup.transform.name.Contains("Gold"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Silver Coin") && pickup.transform.name.Contains("Silver"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                        if (item.name.Contains("Copper Coin") && pickup.transform.name.Contains("Copper"))
+                        {
+                            possibleItems.Add(item);
+                        }
+                    }
+                    Debug.Log(possibleItems[0].name);
+                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[0]);
+                    possibleItems.Clear();
+                    Destroy(pickup.transform.gameObject);
+                    //Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
+            }
+        }
+        /*RaycastHit[] hits;
+        hits = Physics.RaycastAll(cam.transform.position, cam.transform.forward, range);
+        //RaycastHit artefact;
+        //RaycastHit ground;
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if(hits[i].transform.gameObject.tag == "Artefact")
+            {
+                artefact = hits[i];
+                moundPos = ;
+                moundPos.y = 0.043f;
+                if (Input.GetMouseButtonDown(0))
+                {
+
+                    Debug.Log("digging");
+                    if (artefact.transform.name.Contains("gold"))
+                    {
+                        Instantiate(goldMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                    }
+                    if (artefact.transform.name.Contains("silver"))
+                    {
+                        Instantiate(silverMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                    }
+                    if (artefact.transform.name.Contains("copper"))
+                    {
+                        Instantiate(copperMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                    }
+                    Destroy(artefact.transform.gameObject);
+                }
+            }
+            if (hits[i].transform.gameObject.tag == "Ground")
+            {
+                ground = hits[i];
+            }
+        }
+        if (hits[0].)
             {
                 moundPos = hit.transform.position;
                 moundPos.y = 0.043f;
                 if (Input.GetMouseButtonDown(0))
                 {
+                    
+                    Debug.Log("digging");
                     if (hit.transform.name.Contains("gold"))
                     {
                         Instantiate(goldMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
@@ -85,6 +188,7 @@ public class Digging : MonoBehaviour
                     Instantiate(mound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                 }
             }
-        }
+        }*/
     }
-}
+    }
+

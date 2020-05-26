@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Gold Coin
   m_EditorClassIdentifier: 
   name: Gold Coin
-  icon: {fileID: 21300000, guid: 36c30653564fb584183d0e2b32a3ae3f, type: 3}
+  icon: {fileID: 21300000, guid: e633766f1aeede74e8f9f31703fd743c, type: 3}
   cost: 0
