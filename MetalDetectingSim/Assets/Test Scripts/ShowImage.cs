@@ -22,4 +22,15 @@ public class ShowImage : MonoBehaviour
         display.sprite = current.sprite;
         display.enabled = true;
     }
+    public void TeleportTo(string destination)
+    {
+        if (destination == "Museum")
+        {
+
+        }
+        else if (destination == "Forest")
+        {
+
+        }
+    }
 }
