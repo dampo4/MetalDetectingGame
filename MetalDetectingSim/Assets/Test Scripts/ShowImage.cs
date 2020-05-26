@@ -10,9 +10,7 @@ public class ShowImage : MonoBehaviour
     public GameObject player;
     public GameObject museum;
     public GameObject forest;
-    //private Vector3 museum = new Vector3(63.04f, 7.73f, 23.49f);
-    //private Vector3 forest = new Vector3(206.1f, 6.659f, 151.4f);
-    private CharacterController test;
+    private CharacterController controller;
     public void Display(int icon)
     {
         Debug.Log(icon);
@@ -30,18 +28,16 @@ public class ShowImage : MonoBehaviour
     }
     public void TeleportTo(string destination)
     {
-        test = player.GetComponent<CharacterController>();
-        //Time.timeScale = 1;
-        test.enabled = false;
+        controller = player.GetComponent<CharacterController>();
+        controller.enabled = false;
         if (destination == "Museum")
         {
-            Debug.Log("got here");
             player.transform.position = museum.transform.position;
         }
         else if (destination == "Forest")
         {
             player.transform.position = forest.transform.position;
         }
-        test.enabled = true;
+        controller.enabled = true;
     }
 }
