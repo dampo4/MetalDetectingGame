@@ -13,7 +13,7 @@ public class ClampDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 namePos = Camera.main.WorldToScreenPoint(this.transform.position);
-        DetectorReading.transform.position = namePos;
+        //Vector3 namePos = Camera.main.WorldToScreenPoint(this.transform.position);
+        //DetectorReading.transform.position = namePos;
     }
 }
