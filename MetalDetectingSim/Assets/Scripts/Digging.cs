@@ -24,7 +24,7 @@ public class Digging : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) & items.Count != 0)
         {
             Debug.Log("clicked");
             RaycastHit[] hits;

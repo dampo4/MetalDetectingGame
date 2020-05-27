@@ -403,7 +403,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25861676}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1065}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 29275289}
@@ -412,7 +412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 156.722, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25861678
 MonoBehaviour:
@@ -445,7 +445,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Heraldic Horse Pendant
+
+    1300s'
 --- !u!222 &25861679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -600,7 +602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &53203152
 Transform:
   m_ObjectHideFlags: 0
@@ -758,7 +760,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63592428}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.136}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 950498478}
@@ -767,7 +769,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 160.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63592430
 MonoBehaviour:
@@ -800,7 +802,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Henry The Third Penny
+
+    1206 - 1272'
 --- !u!222 &63592431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1356,8 +1360,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116369772}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
-  m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1257}
+  m_LocalScale: {x: 0.004, y: 0.004, z: 0.61}
   m_Children: []
   m_Father: {fileID: 236245672}
   m_RootOrder: 0
@@ -1365,7 +1369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 158.0695, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116369774
 MonoBehaviour:
@@ -1398,7 +1402,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Queen Victoria Half Sovereign
+
+    1819 - 1901'
 --- !u!222 &116369775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2482,7 +2488,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209732307}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0909}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 246813982}
@@ -2491,7 +2497,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 164.5183, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209732309
 MonoBehaviour:
@@ -2524,7 +2530,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'William The Third Sixpence
+
+    1689 - 1702'
 --- !u!222 &209732310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3136,7 +3144,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258344076}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1006}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 136464718}
@@ -3145,7 +3153,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 159.6906, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258344078
 MonoBehaviour:
@@ -3178,7 +3186,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'WW1 Army Service Corp
+
+    Cap Badge'
 --- !u!222 &258344079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3859,7 +3869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &315175639
 Transform:
   m_ObjectHideFlags: 0
@@ -4788,7 +4798,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398416120}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1168}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1348169564}
@@ -4797,7 +4807,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 151.5744, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398416122
 MonoBehaviour:
@@ -4830,7 +4840,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Henry The Eighth Groat
+
+    1509 - 1547'
 --- !u!222 &398416123
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6355,7 +6367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &569545535
 Transform:
   m_ObjectHideFlags: 0
@@ -6419,7 +6431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &600379251
 Transform:
   m_ObjectHideFlags: 0
@@ -7693,7 +7705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &692995110
 Transform:
   m_ObjectHideFlags: 0
@@ -8178,7 +8190,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762689653}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0936}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1595810496}
@@ -8187,7 +8199,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 163.2177, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762689655
 MonoBehaviour:
@@ -8220,7 +8232,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Wrought Iron Georgian Shoe Buckle
+
+    1700s'
 --- !u!222 &762689656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8931,7 +8945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &866365331
 Transform:
   m_ObjectHideFlags: 0
@@ -10667,6 +10681,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dfca24568d3bded48ac66322a4d1391c, type: 2}
   - {fileID: 11400000, guid: 3a5891fdaead1eb4c97e96dcd95877fd, type: 2}
   - {fileID: 11400000, guid: edf7879cdd0aa3e46a30de88102400b7, type: 2}
+  - {fileID: 11400000, guid: 5ad3e96f312e2e943a68429eedde7fe0, type: 2}
   possibleItems: []
 --- !u!1 &997884360
 GameObject:
@@ -12386,7 +12401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1212114510
 Transform:
   m_ObjectHideFlags: 0
@@ -13092,7 +13107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1252989190
 Transform:
   m_ObjectHideFlags: 0
@@ -13614,7 +13629,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277898001}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.106}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 334259562}
@@ -13623,7 +13638,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 156.9991, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277898003
 MonoBehaviour:
@@ -13656,7 +13671,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Elizabeth The First Sixpence
+
+    1558 - 1603'
 --- !u!222 &1277898004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15127,7 +15144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1444343983
 Transform:
   m_ObjectHideFlags: 0
@@ -16318,7 +16335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1544179976
 Transform:
   m_ObjectHideFlags: 0
@@ -17196,7 +17213,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691353460}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.114}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 779536048}
@@ -17205,7 +17222,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 153.0191, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691353462
 MonoBehaviour:
@@ -17238,7 +17255,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Enamel Harness Pendant
+
+    1300s'
 --- !u!222 &1691353463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19409,7 +19428,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027873167}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.32}
+  m_LocalPosition: {x: 0, y: 0, z: -0.069}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.1}
   m_Children: []
   m_Father: {fileID: 885165550}
@@ -19418,7 +19437,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.213, y: 0.125}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 165.0137, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027873169
 MonoBehaviour:
@@ -19451,7 +19470,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Brass Tudor Shoe Buckle
+
+    1600s'
 --- !u!222 &2027873170
 CanvasRenderer:
   m_ObjectHideFlags: 0
