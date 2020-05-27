@@ -600,7 +600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &53203152
 Transform:
   m_ObjectHideFlags: 0
@@ -3859,7 +3859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &315175639
 Transform:
   m_ObjectHideFlags: 0
@@ -6315,7 +6315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &569545535
 Transform:
   m_ObjectHideFlags: 0
@@ -6379,7 +6379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &600379251
 Transform:
   m_ObjectHideFlags: 0
@@ -7653,7 +7653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &692995110
 Transform:
   m_ObjectHideFlags: 0
@@ -8891,7 +8891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &866365331
 Transform:
   m_ObjectHideFlags: 0
@@ -12346,7 +12346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1212114510
 Transform:
   m_ObjectHideFlags: 0
@@ -13052,7 +13052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1252989190
 Transform:
   m_ObjectHideFlags: 0
@@ -15087,7 +15087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1444343983
 Transform:
   m_ObjectHideFlags: 0
@@ -16278,7 +16278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1544179976
 Transform:
   m_ObjectHideFlags: 0
@@ -18398,6 +18398,16 @@ MonoBehaviour:
   player: {fileID: 996889206}
   museum: {fileID: 68134541}
   forest: {fileID: 1721693366}
+  one: {fileID: 1212114509}
+  two: {fileID: 866365330}
+  three: {fileID: 315175638}
+  four: {fileID: 53203151}
+  five: {fileID: 692995109}
+  six: {fileID: 600379250}
+  seven: {fileID: 1252989189}
+  eight: {fileID: 1444343982}
+  nine: {fileID: 569545534}
+  ten: {fileID: 1544179975}
 --- !u!4 &1939113926
 Transform:
   m_ObjectHideFlags: 0

@@ -11,32 +11,17 @@ public class ShowImage : MonoBehaviour
     public GameObject museum;
     public GameObject forest;
     private CharacterController controller;
+    public GameObject one;
+    public GameObject two;
+    public GameObject three;
+    public GameObject four;
+    public GameObject five;
+    public GameObject six;
+    public GameObject seven;
+    public GameObject eight;
+    public GameObject nine;
+    public GameObject ten;
 
-    private void Start()
-    {
-        GameObject.Find("/PIC-FRAME-FBX/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (1)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (1)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (2)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (2)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (3)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (3)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (4)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (4)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (5)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (5)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (6)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (6)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (7)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (7)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (8)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (8)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (9)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (9)/Plane").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (10)/Museum Display").SetActive(false);
-        GameObject.Find("/PIC-FRAME-FBX (10)/Plane").SetActive(false);
-    }
     public void Display(string icon)
     {
         Debug.Log(icon);
@@ -73,54 +58,43 @@ public class ShowImage : MonoBehaviour
             Debug.Log(current.sprite.name);
             if (current.sprite.name == "1")
             {
-                GameObject.Find("/PIC-FRAME-FBX (2)/Museum Display").SetActive(false);
-                GameObject.Find("/PIC-FRAME-FBX (2)/Plane").SetActive(false);
+                eight.SetActive(true);
             }
             if (current.sprite.name == "2")
             {
-                GameObject.Find("/PIC-FRAME-FBX (3)/Museum Display").SetActive(false);
-                GameObject.Find("/PIC-FRAME-FBX (3)/Plane").SetActive(false);
+                six.SetActive(true);
             }
             if (current.sprite.name == "3")
             {
-                GameObject.Find("/PIC-FRAME-FBX (4)/Museum Display").SetActive(false);
-                GameObject.Find("/PIC-FRAME-FBX (4)/Plane").SetActive(false);
+                seven.SetActive(true);
             }
             if (current.sprite.name == "4")
             {
-                GameObject.Find("/PIC-FRAME-FBX/Museum Display").SetActive(false);
-                GameObject.Find("/PIC-FRAME-FBX/Plane").SetActive(false);
+                ten.SetActive(true);
             }
             if (current.sprite.name == "5")
             {
-                GameObject.Find("/PIC-FRAME-FBX (1)/Museum Display").SetActive(false);
-                GameObject.Find("/PIC-FRAME-FBX (1)/Plane").SetActive(false);
+                nine.SetActive(true);
             }
             if (current.sprite.name == "6")
             {
-                GameObject.Find("/PIC-FRAME-FBX (6)/Museum Display").SetActive(true);
-                GameObject.Find("/PIC-FRAME-FBX (6)/Plane").SetActive(true);
+                three.SetActive(true);
             }
             if (current.sprite.name == "7")
             {
-                GameObject.Find("/PIC-FRAME-FBX (5)/Museum Display").SetActive(true);
-                GameObject.Find("/PIC-FRAME-FBX (5)/Plane").SetActive(true);
-
+                four.SetActive(true);
             }
             if (current.sprite.name == "8")
             {
-                GameObject.Find("/PIC-FRAME-FBX (7)/Museum Display").SetActive(true);
-                GameObject.Find("/PIC-FRAME-FBX (7)/Plane").SetActive(true);
+                one.SetActive(true);
             }
             if (current.sprite.name == "9")
             {
-                GameObject.Find("/PIC-FRAME-FBX (8)/Museum Display").SetActive(true);
-                GameObject.Find("/PIC-FRAME-FBX (8)/Plane").SetActive(true);
+                five.SetActive(true);
             }
             if (current.sprite.name == "10")
             {
-                GameObject.Find("/PIC-FRAME-FBX (9)/Museum Display").SetActive(true);
-                GameObject.Find("/PIC-FRAME-FBX (9)/Plane").SetActive(true);
+                two.SetActive(true);
             }
         }
     }

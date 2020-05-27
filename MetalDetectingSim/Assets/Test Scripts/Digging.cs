@@ -17,7 +17,7 @@ public class Digging : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        possibleItems = items;
     }
 
     // Update is called once per frame
@@ -60,6 +60,10 @@ public class Digging : MonoBehaviour
                 {
                     Instantiate(silverMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                 }
+                if (artefact.transform.name.Contains("iron"))
+                {
+                    Instantiate(silverMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
+                }
                 if (artefact.transform.name.Contains("copper"))
                 {
                     Instantiate(copperMound, moundPos, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
@@ -71,7 +75,7 @@ public class Digging : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     Debug.Log("Picked Up");
-                    foreach (Item item in items)
+                   /* foreach (Item item in items)
                     {
                         possibleItems.Add(item);
                         /*if (item.name.Contains("Gold Coin") && pickup.transform.name.Contains("Gold"))
@@ -85,11 +89,13 @@ public class Digging : MonoBehaviour
                         if (item.name.Contains("Copper Coin") && pickup.transform.name.Contains("Copper"))
                         {
                             possibleItems.Add(item);
-                        }*/
-                    }
-                    Debug.Log(possibleItems[0].name);
-                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[Random.Range(0,possibleItems.Count)]);
-                    possibleItems.Clear();
+                        }
+                    }*/
+                    int toRemove = Random.Range(0, possibleItems.Count);
+                    //Debug.Log(possibleItems[0].name);
+                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[toRemove]);
+                    possibleItems.Remove(possibleItems[toRemove]);
+                    //possibleItems.Clear();
                     Destroy(pickup.transform.gameObject);
                     //Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
                 }

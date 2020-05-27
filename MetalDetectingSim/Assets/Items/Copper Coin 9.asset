@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 030e358a36c5bf74b919dda1c6e89b90, type: 3}
-  m_Name: Copper Coin 4
+  m_Name: Copper Coin 9
   m_EditorClassIdentifier: 
   name: Copper Coin
-  icon: {fileID: 21300000, guid: 417e6a9e85539174488be72182725113, type: 3}
+  icon: {fileID: 21300000, guid: 78ac7e70f6171384c88000c662d6889e, type: 3}
   cost: 0
