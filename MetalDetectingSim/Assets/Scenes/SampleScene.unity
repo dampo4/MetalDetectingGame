@@ -7166,9 +7166,15 @@ MonoBehaviour:
     type: 3}
   inventory: {fileID: 1954296627}
   items:
+  - {fileID: 11400000, guid: 50f7b25fb23ab724ab52ec277e43aa45, type: 2}
+  - {fileID: 11400000, guid: 3209c015025daef4c8531419e4e6f5ce, type: 2}
+  - {fileID: 11400000, guid: 82b7221921f8de644855808182764691, type: 2}
+  - {fileID: 11400000, guid: f2dd8e2f8ca8de34e8dda1e0135da9ae, type: 2}
+  - {fileID: 11400000, guid: d3f37adf0375cd247a9e7b96915967d0, type: 2}
+  - {fileID: 11400000, guid: aeb6e1086121ecb458052ff573ef2340, type: 2}
+  - {fileID: 11400000, guid: dfca24568d3bded48ac66322a4d1391c, type: 2}
+  - {fileID: 11400000, guid: 3a5891fdaead1eb4c97e96dcd95877fd, type: 2}
   - {fileID: 11400000, guid: edf7879cdd0aa3e46a30de88102400b7, type: 2}
-  - {fileID: 11400000, guid: 30b13618451904a459c11d8f4cf73550, type: 2}
-  - {fileID: 11400000, guid: 61e00d494aad5ef449945535ace948e5, type: 2}
   possibleItems: []
 --- !u!1 &997884360
 GameObject:

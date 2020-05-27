@@ -73,7 +73,8 @@ public class Digging : MonoBehaviour
                     Debug.Log("Picked Up");
                     foreach (Item item in items)
                     {
-                        if (item.name.Contains("Gold Coin") && pickup.transform.name.Contains("Gold"))
+                        possibleItems.Add(item);
+                        /*if (item.name.Contains("Gold Coin") && pickup.transform.name.Contains("Gold"))
                         {
                             possibleItems.Add(item);
                         }
@@ -84,10 +85,10 @@ public class Digging : MonoBehaviour
                         if (item.name.Contains("Copper Coin") && pickup.transform.name.Contains("Copper"))
                         {
                             possibleItems.Add(item);
-                        }
+                        }*/
                     }
                     Debug.Log(possibleItems[0].name);
-                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[0]);
+                    inventory.GetComponent<PlayerInventory>().UpdateUI(possibleItems[Random.Range(0,possibleItems.Count)]);
                     possibleItems.Clear();
                     Destroy(pickup.transform.gameObject);
                     //Instantiate(mound, hit.transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
