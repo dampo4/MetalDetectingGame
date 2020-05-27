@@ -16,7 +16,7 @@ public class PlayerInventory : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("i") || Input.GetKeyDown("e"))
         {
 
             canvasObject.enabled = !canvasObject.enabled;
