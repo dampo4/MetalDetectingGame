@@ -11,16 +11,16 @@ public class ShowImage : MonoBehaviour
     public GameObject museum;
     public GameObject forest;
     private CharacterController controller;
-    public void Display(int icon)
+    public void Display(string icon)
     {
         Debug.Log(icon);
-        if (icon == 0)
+        if (icon == "0")
         {
             current = GameObject.Find("/Canvas/Inventory/Panel/InventorySlot/ItemButton/Icon").GetComponent<Image>();
         }
         else
         {
-            current = GameObject.Find("/Canvas/Inventory/Panel/InventorySlot(" + icon + ")/ItemButton/Icon").GetComponent<Image>();
+            current = GameObject.Find("/Canvas/Inventory/Panel/InventorySlot ("+ icon +")/ItemButton/Icon").GetComponent<Image>();
         }
         Debug.Log(current.sprite.name);
         display.sprite = current.sprite;

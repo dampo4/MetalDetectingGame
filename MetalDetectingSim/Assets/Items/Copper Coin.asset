@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Copper Coin
   m_EditorClassIdentifier: 
   name: Copper Coin
-  icon: {fileID: 21300000, guid: 0de2b3af68087c44aa5383e332f742fd, type: 3}
+  icon: {fileID: 21300000, guid: 8888697d5c4571941a1125b1f7a051fc, type: 3}
   cost: 0
